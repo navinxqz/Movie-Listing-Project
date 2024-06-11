@@ -1,0 +1,9 @@
+# Directories
+.vs
+*.msi
+.idea
+*.obj
+
+# Files
+*.user
+*.sln.docstates

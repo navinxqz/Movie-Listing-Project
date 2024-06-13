@@ -2,6 +2,8 @@
 .vs
 *.msi
 .idea
+obj
+bin
 
 # Files
 *.user

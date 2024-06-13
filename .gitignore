@@ -2,8 +2,9 @@
 .vs
 *.msi
 .idea
-*.obj
 
 # Files
 *.user
 *.sln.docstates
+*.csproj
+*.obj

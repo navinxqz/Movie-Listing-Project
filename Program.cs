@@ -14,6 +14,13 @@
             string option = Console.ReadLine().ToUpper();
             return option;
         }
+        private static void InsetOption(){
+            Console.Write("Insert a new series: ");
+            foreach (int item in Enum.GetValues(typeof())){}
+            {
+                
+            }
+        }
         private static void List(){
             Console.WriteLine("\nList of all series:");
             
@@ -23,6 +30,7 @@
             while(op.ToUpper() != "X"){
                 switch(op){
                     case "1": break;
+                    default: Console.WriteLine("Invalid selection!"); break;
                 }
             }
         }

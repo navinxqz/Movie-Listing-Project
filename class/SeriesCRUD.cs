@@ -12,10 +12,9 @@ namespace Project{
             slist.Add(entity);
         }
         public void Delete(int id){
-            var series = GetId(id);
+            SeriesMethods series = slist.Find(s => s.GetId() == id);
             if(series != null){
                 series.Delete();
-                Console.WriteLine("Series deleted successfully.\n");
             }else{
                 Console.WriteLine("Series not found!\n");
             }

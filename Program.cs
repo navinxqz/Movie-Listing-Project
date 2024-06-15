@@ -11,6 +11,7 @@
             Console.WriteLine("\t[5] View Series info");
             Console.WriteLine("\t[X] Exit\n");
 
+            Console.Write("Choice: ");
             string option = Console.ReadLine().ToUpper();
             return option;
         }
@@ -18,9 +19,13 @@
             Console.Write("Enter the series Id: ");
             if(int.TryParse(Console.ReadLine(),out int seriesIndex)){
                 var series = crud.GetId(seriesIndex);
+                if(series != null){
                 Console.WriteLine(series);
+                }else{
+                    Console.WriteLine("\nSeries not found.\n");
+                }
             }else{
-                System.Console.WriteLine("\nInvalid Id!\n");
+                Console.WriteLine("\nInvalid Id!\n");
             }
         }
         private static void List(){ //(1)
@@ -28,12 +33,12 @@
             var list = crud.List();
 
             if(list.Count == 0){
-                Console.WriteLine("No series found!\n");
+                Console.WriteLine("\nNo series found!\n");
                 return;
             }
             foreach(var item in list){
                 var deleted = item.IsDeleted();
-                Console.WriteLine("ID {0}: - {1} - {2}",item.GetId(),item.GetTitle(),(deleted ? "Deleted" : ""));
+                Console.WriteLine("ID {0}: - {1} - {2}",item.GetId(),item.GetTitle(),(deleted ? "Deleted" : "Available"));
             }
         }
         private static void AddOption(){    //add list (2)
@@ -102,8 +107,6 @@
                 if(series!=null){
                     crud.Delete(seriesIndex);
                     Console.WriteLine("Series Deleted Successfully\n");
-                }else{
-                    Console.WriteLine("Series not found\n");
                 }
             }else{
                 Console.WriteLine("Invalid ID!\n");
@@ -118,7 +121,7 @@
                     case "3": Update(); break;
                     case "4": Delete(); break;
                     case "5": View(); break;
-                    case "X": Environment.Exit(0); break;
+                    //case "X": Environment.Exit(0); break;
                     default: Console.WriteLine("Invalid selection!"); break;
                 }
                 op = Option();

@@ -1,1 +1,3 @@
-namespace Project{}
+namespace Project{
+    class SeriesCRUD : IRepo<Series>{}
+}

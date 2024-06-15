@@ -18,7 +18,13 @@
             Console.Write("Insert a new series: ");
             foreach (int item in Enum.GetValues(typeof(MovieGenre))){
                 Console.WriteLine("{0} - {1}",item,Enum.GetValues(typeof(MovieGenre)));
-            }
+            }Console.Write("Input the Genre from the List:");
+
+            int g = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Add Series Title: ");
+            Console.WriteLine("Add Series Description:");
+            string desc = Console.ReadLine();
+
         }
         private static void List(){
             Console.WriteLine("\nList of all series:");

@@ -1,4 +1,8 @@
 namespace Project{
+    public enum MovieGenre{
+        Action = 1, Western = 2, Romance = 3, Horror = 4, Drama = 5,
+        Animation = 6, Thriller = 7, Comedy = 8, SciFi = 9, History = 10
+    }
     public abstract class Abs{
         public int ID{get; protected set;}
     }
@@ -14,6 +18,7 @@ namespace Project{
             this.ID = id;
             this.Genre = genre;
             this.Title = title;
+            this.Desc = desc;
             this.RYear = ryear;
         }
         public void Delete(){

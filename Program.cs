@@ -14,16 +14,14 @@
             string option = Console.ReadLine().ToUpper();
             return option;
         }
-        private static void InsetOption(){
+        private static void AddOption(){
             Console.Write("Insert a new series: ");
-            foreach (int item in Enum.GetValues(typeof())){}
-            {
-                
+            foreach (int item in Enum.GetValues(typeof(MovieGenre))){
+                Console.WriteLine("{0} - {1}",item,Enum.GetValues(typeof(MovieGenre)));
             }
         }
         private static void List(){
             Console.WriteLine("\nList of all series:");
-            
         }
         public static void Main(String[] args){
             string op = Option();

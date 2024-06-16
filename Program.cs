@@ -11,7 +11,7 @@
             Console.WriteLine("\t[5] View Series info");
             Console.WriteLine("\t[X] Exit\n");
 
-            Console.Write("Choice: ");
+            Console.Write("Option: ");
             string option = Console.ReadLine().ToUpper();
             return option;
         }
@@ -114,6 +114,7 @@
         }
         public static void Main(String[] args){
             string op = Option();
+            
             while(op.ToUpper() != "X"){
                 switch(op){
                     case "1": List(); break;
@@ -125,7 +126,7 @@
                     default: Console.WriteLine("Invalid selection!"); break;
                 }
                 op = Option();
-            }System.Console.WriteLine("Thanks alot for using me.\n");
+            }Console.WriteLine("\nThanks alot for using me.\n");
         }
     }
 }

@@ -1,6 +1,13 @@
 namespace Project{
     public class SeriesCRUD : IRepo<SeriesMethods>{
         private List<SeriesMethods> slist = new();
+
+        public SeriesCRUD(){    //added a predefined series, can b deleted later
+            slist.Add(new SeriesMethods(1, MovieGenre.Action, "Daredevil season 1", "fight devil fight. no eye cool guy", 2015));
+            slist.Add(new SeriesMethods(2, MovieGenre.Animation, "Spider-man: Into the Spider-Verse", "Spider bite Miles. Miles became spiderman. Gwen hot", 2019));
+            slist.Add(new SeriesMethods(3, MovieGenre.Romance, "Romeo Juliet","Romeo fight Juliet. Juliet fall in love with Rick.", 2025));
+            slist.Add(new SeriesMethods(4, MovieGenre.Comedy, "Microwave", "Did you know when a small person waves it called microwave!",2030));
+        }
         public List<SeriesMethods> List(){
             return new List<SeriesMethods>(slist);
             //return a new list to avoid external modification

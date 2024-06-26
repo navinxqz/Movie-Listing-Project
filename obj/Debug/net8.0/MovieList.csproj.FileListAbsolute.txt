@@ -1,0 +1,15 @@
+D:\versity space\coding file\MovieList\bin\Debug\net8.0\MovieList.exe
+D:\versity space\coding file\MovieList\bin\Debug\net8.0\MovieList.deps.json
+D:\versity space\coding file\MovieList\bin\Debug\net8.0\MovieList.runtimeconfig.json
+D:\versity space\coding file\MovieList\bin\Debug\net8.0\MovieList.dll
+D:\versity space\coding file\MovieList\bin\Debug\net8.0\MovieList.pdb
+D:\versity space\coding file\MovieList\obj\Debug\net8.0\MovieList.GeneratedMSBuildEditorConfig.editorconfig
+D:\versity space\coding file\MovieList\obj\Debug\net8.0\MovieList.AssemblyInfoInputs.cache
+D:\versity space\coding file\MovieList\obj\Debug\net8.0\MovieList.AssemblyInfo.cs
+D:\versity space\coding file\MovieList\obj\Debug\net8.0\MovieList.csproj.CoreCompileInputs.cache
+D:\versity space\coding file\MovieList\obj\Debug\net8.0\MovieList.sourcelink.json
+D:\versity space\coding file\MovieList\obj\Debug\net8.0\MovieList.dll
+D:\versity space\coding file\MovieList\obj\Debug\net8.0\refint\MovieList.dll
+D:\versity space\coding file\MovieList\obj\Debug\net8.0\MovieList.pdb
+D:\versity space\coding file\MovieList\obj\Debug\net8.0\MovieList.genruntimeconfig.cache
+D:\versity space\coding file\MovieList\obj\Debug\net8.0\ref\MovieList.dll

@@ -12,18 +12,19 @@
             Console.WriteLine("\t[X] Exit\n");
 
             Console.Write("Option: ");
-            string option = Console.ReadLine().ToUpper();
+            string option = Console.ReadLine().ToUpper();   //only for x 
             return option;
         }
         private static void View(){ //(5)
             Console.Write("Enter the series Id: ");
             if(int.TryParse(Console.ReadLine(),out int seriesIndex)){
                 var series = crud.GetId(seriesIndex);
-                if(series != null){
+            /*    if(series != null){
                 Console.WriteLine(series);
                 }else{
                     Console.WriteLine("\nSeries not found.\n");
-                }
+                }   */
+                Console.WriteLine(series != null ? series : "\nSeries not found.\n");
             }else{
                 Console.WriteLine("\nInvalid Id!\n");
             }

@@ -26,6 +26,7 @@ namespace Project{
             }else{
                 Console.WriteLine("Series not found!\n");
             }
+            //series != null ? series.Delete() : System.Console.WriteLine("Series not found!\n");
         }
         public void Update(int id, SeriesMethods entity){
             int index = slist.FindIndex(s => s.ID ==id);

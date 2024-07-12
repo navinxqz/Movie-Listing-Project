@@ -44,7 +44,8 @@
         }
         private static void AddOption(){    //add list (2)
             Console.WriteLine("Insert a new series:");
-            foreach (int item in Enum.GetValues(typeof(MovieGenre))){
+
+            foreach(int item in Enum.GetValues(typeof(MovieGenre))){
                 Console.WriteLine("{0} - {1}", item, (MovieGenre)item);
             }Console.Write("Input the Genre from the List: ");
 
@@ -72,7 +73,7 @@
                 var series = crud.GetId(seriesIndex);
                 if(series !=null){
                     Console.WriteLine($"Current Details of series-id: {seriesIndex}");
-                    Console.WriteLine(series);  //seriesmethod has ovrridden ToString()
+                    Console.WriteLine(series);  //series method has ovrridden ToString()
                     Console.WriteLine("\nEnter new details:");
                     
                     foreach(int item in Enum.GetValues(typeof(MovieGenre))){
